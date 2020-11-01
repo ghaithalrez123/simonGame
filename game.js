@@ -83,10 +83,11 @@ function nextSequence() {
   gamePattern.push(randomChosenColour);
 
   document.getElementById((randomChosenColour)).style.animation="moving 2s 1 linear";
+   playSound2(randomChosenColour);
   setTimeout(function () {
     document.getElementById((randomChosenColour)).style.animation="";
   },1005);
-  playSound2(randomChosenColour);
+ 
 }
 
 function animatePress(currentColor) {
