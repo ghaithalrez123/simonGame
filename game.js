@@ -82,7 +82,7 @@ function nextSequence() {
   var randomChosenColour = buttonColours[randomNumber];
   gamePattern.push(randomChosenColour);
 
-  document.getElementById((randomChosenColour)).style.animation="moving 800ms 1 linear";
+  document.getElementById((randomChosenColour)).style.animation="moving 2s 1 linear";
   setTimeout(function () {
     document.getElementById((randomChosenColour)).style.animation="";
   },1005);
